@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML semântico</title>
+
+
+<header>
+
+</header>
+
+<body>
+    <header>
+        <nav> <!--Identifica a aba de navegação do site, que apota para outras paginas-->
+            <ul>
+                <li><a href="">Item1</a></li>
+                <li><a href="">Item2</a></li>
+                <li><a href="">Item3</a></li>
+            </ul>
+        </nav>
+
+        <figure> <!--Conteiner da uma imagem, delimita onde a imagem irá ficar-->
+            <img src="/dio.me-bruno-oliveira/Front-End/PG1/src/img/img1.jpg" width="250" /> <!--Inserção de uma imagem-->
+            <figcaption>Descrição da imagem</figcaption> <!--Tag auxiliar da tag <figure> -->  
+
+
+        </figure>
+    </header> <!--Cabeçalho da pagina-->
+    <article> <!--Aqui vai um artigo, texto principal do site-->
+        <h1>O que realmente tem no fundo do mar?</h1>
+        <p>Aqui vai o artigo do site</p>
+        <q>CItação</q> <!--Citação sem quebra de linha-->
+        <blockquote cite="">1993</blockquote><!--Aqui vai uma citação e função com quebra de linha 'cite' é o link de referencia-->
+        <p><time pubdate>Publicado 07/01/2026 - Quarta Feira</time><!--Define a data da publicação do artigo--></p>
+    </article>
+    <picture> <!--Muntiplas fontes para mesma imagem, podendo passar parametros-->
+        <source srcset="/dio.me-bruno-oliveira/Front-End/PG1/src/img/img2.png" media="(min-width: 600px)"> 
+        <!--Altera a imagens dependendo do tamanho da tela -->
+        <img src="/dio.me-bruno-oliveira/Front-End/PG1/src/img/img1.jpg" />
+    </picture>
+    <main>
+        <section></section> <!--Determina as seções de informações, da página -->
+        <section></section>
+        <aside></aside>  <!--Informações que não tenhão na haver com os dados as informações da página, asuntos auxiliares-->
+    </main> <!-- A tag "main" (CONTEUDO PRINCIPAL) não pdoe ser filha das tegs semânticas, e só pode uma por página-->
+    <footer></footer> <!--Rodapé da pagina-->    
+</body>
+</html>
